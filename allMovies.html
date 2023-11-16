@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Movies</title>
+    <link rel="stylesheet" href="./css/allMovies.css">
+    <script defer src="./js/allmovies.js"></script>
+    <script defer src="./js/link.js"></script>
+    <!-- <script defer src="search.js"></script> -->
+
+</head>
+<body>
+    <div class="nav">
+        <a href="/home">Home</a>
+        <a href="/movieCollection">Movies</a>
+        <a href="/mylist">Watch List</a>
+    </div>
+    <h1>Movie WatchList</h1>
+    <form action="/search" method="GET" class="searchBox">
+        <input type="text" placeholder="Search Movies" id="searchValue" class="textInput">
+        <input type="submit" value="Search" class="buttonInput">
+    </form>
+    <div id="allMovies" class="movieCollection">
+    </div>
+    <div class="mButton">
+        <input type="button" value="+" id="moreButton" class="buttonMore">
+    </div>
+</body>
+</html>

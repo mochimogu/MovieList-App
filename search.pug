@@ -1,0 +1,20 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title All Movies
+  link(rel='stylesheet' href='./css/allMovies.css')
+  //- script(defer='' src='allmovies.js')
+  script(defer='' src='./js/link.js')
+  script(defer='' src='./js/search.js')
+.nav
+  a(href='/home') Home
+  a(href='/movieCollection') Movies
+  a(href='/mylist') Watch List
+h1 Movie WatchList
+form.searchBox(action='/search' method='GET')
+  input#searchValue.textInput(type='text' placeholder='Search Movies')
+  input.buttonInput(type='submit' value='Search')
+#allMovies.movieCollection
+.mButton
+  input#moreButton.buttonMore(type='button' value='+')

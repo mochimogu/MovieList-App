@@ -1,0 +1,116 @@
+
+body {
+    background-image: linear-gradient(black, grey);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 8px 8px 8px 8px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: white;
+    cursor: default;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: 	rgba(211,211,211,0.2);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 10px 0px 10px 0px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: auto;
+    height: 100%;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    cursor: pointer;
+    color:lightgray;
+}
+
+.listMovie {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+}
+.divContainer {
+    display: flex;
+    justify-content: center;
+    box-shadow: 8px 10px 12px black;
+    border-radius: 10px;
+    margin: 20px 0 20px 0;
+    transition: transform 300ms ease-in-out;
+}
+
+.divContainer:hover {
+    transform: scale(1.2);
+    box-shadow: 8px 10px 12px rgb(42, 42, 42);
+}
+.movieImage {
+    flex: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.linkImage {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.image {
+    width: 150px;
+    height: 250px;
+    margin: auto;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 8px 10px 12px black;
+}
+
+.info {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: space-around;
+    color: white;
+    margin-left: 20px;
+}
+
+.dButton {
+    text-align: center;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 20px;
+    height: 40px;
+    width: 45px;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    transition: transform 300ms ease-in-out;
+}
+
+.dButton:hover {
+    transform: scale(1.2);
+    color: rgb(239, 99, 99);
+    border-radius: 50%;
+    box-shadow: 8px 10px 12px black;
+}
+
+p {
+    font-size: 14px;
+}
