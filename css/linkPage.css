@@ -1,0 +1,235 @@
+
+body {
+    background-image: linear-gradient(black, grey);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: 	rgba(211,211,211,0.2);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 10px 0px 10px 0px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: auto;
+    height: 100%;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    cursor: pointer;
+    color:lightgray;
+}
+
+.titleName {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+.cast {
+    text-align: left;
+    font-size: 40px;
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    color: white;
+}
+.infoMovie {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    height: auto;
+    margin-bottom: 20px;
+}
+.boxImage {
+    display: flex;
+    margin: 0 10px 30px 100px;
+    width: 50%;
+    justify-content: center;
+
+}
+.image {
+    width: 450px;
+    height: 650px;
+    margin: auto;
+    /* padding: 10px 10px 10px 10px; */
+    box-shadow: 10px 12px 12px black;
+    border-radius: 10px;
+}
+
+.summary {
+    margin: auto;
+    width: 50%;
+    text-align: justify;
+}
+
+.boxOverview {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    margin: 20px;
+}
+
+.miscBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.listActor {
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(59, 59, 59), black);
+    /* background: transparent; */
+    width: auto;
+    height: 10%;
+    overflow-x: overlay;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 20px 10px;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.submitDiv {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20%;
+
+}
+.fButton {
+    width: auto;
+    height: 40px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 0 10px 0 10px;
+    border-radius: 20px;
+    box-shadow: 5px 4px 24px black;
+
+}
+
+.fButton:hover {
+    background-color: rgb(53, 53, 53);
+    box-shadow: 2px 4px 24px rgb(128, 128, 128);
+}
+
+
+.actorDiv {
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 20px 10px;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    text-align: center;
+    height: auto;
+    width: 20%;
+    font-size: 16px;
+}
+.picture {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    box-shadow: 8px 10px 12px black;
+    border-radius: 10px;
+}
+::-webkit-scrollbar {
+    width: 13px;
+    background-image: linear-gradient(black, grey);
+}
+::-webkit-scrollbar-track:vertical {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb:vertical {
+    background: rgba(128, 128, 128, 0.722);
+    opacity: 0.5;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+    background: rgba(73, 73, 73, 0.722);
+}
+::-webkit-scrollbar-track:horizontal {
+    background-color: rgb(155, 154, 154);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+    background: rgba(128, 128, 128, 0.722);
+    opacity: 0.5;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background: rgba(198, 197, 197, 0.722);
+
+}
+
+.popup {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+}
+  
+  /* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 50%;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    /* padding: 8px 0; */
+    /* position: absolute; */
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin: auto;
+    margin-left: 250px;
+
+}
+  
+  /* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+  
+  /* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+  
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
